@@ -61,7 +61,7 @@ App.MainLandingPage.MainLandingPage.prototype.onCreateNewImageText = function(ev
     var $form = jQuery(event.target).parents('.control').eq(0),
         $text = $form.find('input[name=text]'),
         $color = $form.find('input[name=color]'),
-        $fontSize = $form.find('input[name=fontSize]');
+        $fontSize = $form.find('select[name=fontSize]');
 
     if (!$text.val()) {
         console.error('text is empty');
@@ -163,8 +163,8 @@ App.MainLandingPage.MainLandingPage.prototype.onCreateNewImageText = function(ev
 
     //очищаем форму
     $text.val('');
-    $color.val('');
-    $fontSize.val('');
+    //$color.val('');
+    //$fontSize.val('');
 };
 
 /**
