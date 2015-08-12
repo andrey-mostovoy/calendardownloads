@@ -1,0 +1,54 @@
+<?php
+/**
+ * @author Andrey Mostovoy <stalk.4.me@gmail.com>
+ * @var stdClass $PageData данные для страницы.
+ * @var \App\Collection\CollectionInterface $Collection
+ */
+use App\Image\Image;
+
+?>
+<div class="GalleryPage">
+    <div class="header">
+        <div class="banner top">banner</div>
+    </div>
+    <div class="content">
+        <div class="column left">
+            <div class="banner left">banner</div>
+        </div>
+        <div class="column middle">
+            <?php if (isset($PageData->availableCategories)): ?>
+                <?php foreach ($PageData->availableCategories as $row): ?>
+                    <div class="row">
+                        <?php foreach ($row as $category => $Collection): ?>
+                            <div class="item">
+                                <h4><?= $Collection->getName(); ?></h4>
+                                <a href="/gallery/cat/<?= $category; ?>">
+                                    <img src="<?= IMAGE_GALLERY_THUMB_PATH . Image::getName($category, $Collection->getMainImage()); ?>" />
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+            <?php if (isset($PageData->availableImages)): ?>
+                <?php foreach ($PageData->availableImages as $row): ?>
+                    <div class="row">
+                        <?php foreach ($row as $id => $image): ?>
+                            <div class="item">
+                                <a href="/img/<?= $PageData->category . '/' . $image; ?>">
+                                    <img src="<?= IMAGE_GALLERY_THUMB_PATH . Image::getName($PageData->category, $image); ?>" />
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+        <div class="column right">
+            <div class="banner right">banner</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="banner bottom">banner</div>
+    </div>
+</div>

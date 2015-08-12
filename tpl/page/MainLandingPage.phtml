@@ -1,0 +1,55 @@
+<?php
+/**
+ * @author Andrey Mostovoy <stalk.4.me@gmail.com>
+ * @var stdClass $PageData данные для страницы.
+ */
+?>
+<div class="MainLandingPage">
+    <div class="header">
+        <div class="banner top">banner</div>
+    </div>
+    <div class="content">
+        <div class="column left">
+            <div class="banner left">banner</div>
+        </div>
+        <div class="column middle">
+            <div class="imageWrapper" style="background: url(<?= $PageData->workUrl ?>) no-repeat top center;"></div>
+            <div class="control">
+                <div class="row">
+                    <div class="label">Текст</div>
+                    <div class="input">
+                        <input type="text" name="text" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">Цвет</div>
+                    <div class="input">
+                        <input type="text" class="color" name="color" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">Размер шрифта</div>
+                    <div class="input">
+                        <input type="text" name="fontSize" value="28" />
+                    </div>
+                </div>
+                <div class="row button">
+                    <div class="input">
+                        <input type="button" class="js-add-image-text" name="addTextImage" value="Добавить" />
+                    </div>
+                </div>
+                <div class="row total-button">
+                    <div class="input">
+                        <input type="button" class="js-save-button" name="save" value="Сохранить" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column right">
+            <div class="banner right">banner</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="banner bottom">banner</div>
+    </div>
+</div>

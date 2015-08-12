@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.download {
+    display: none;
+}
+
+.GalleryPage {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.row .item {
+    margin: 0 15px 20px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.row .item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.row img {
+    width: 230px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.content {
+    margin: 10px 0;
+}
+
+.column {
+    display: inline-block;
+}
+
+.column.left, .column.right {
+    width: 120px;
+}
+
+.column.middle {
+    margin: 0 10px;
+}

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.download {
+    display: none;
+}
+
+.MainLandingPage {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.content {
+    margin: 10px 0;
+}
+
+.column {
+    display: inline-block;
+}
+
+.column.left, .column.right {
+    width: 120px;
+}
+
+.column.middle {
+    margin: 0 10px;
+}
+
+.imageWrapper {
+    display: inline-block;
+    margin-right: 10px;
+    width: 500px;
+    min-height: 315px;
+}
+
+.control {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    width: 195px
+}
+
+.control input {
+    width: 100%;
+}
+
+.control .row {
+    margin-bottom: 7px;
+}
+
+.control .row.total-button {
+    margin-top: 125px;
+}
+
+.control .row:last-child {
+    margin-bottom: 0;
+}
+
+.imageText {
+    display: inline-block;
+    left: 0;
+    top: 0;
+}
+
+.imageText .rotatable {
+    border: 1px solid #862dde;
+}
+
+.imageText .close {
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+    color: palevioletred;
+}
