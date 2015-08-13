@@ -1,0 +1,74 @@
+<?php
+/**
+ * @author Andrey Mostovoy <stalk.4.me@gmail.com>
+ * @var stdClass $PageData данные для страницы.
+ */
+?>
+<div class="MainLandingPage">
+    <div class="header">
+        <img width="100%" src="/static/img/header.png" />
+        <div class="banner top"><!-- banner --></div>
+    </div>
+    <div class="content">
+        <div class="column left">
+            <div class="banner left"><!-- banner --></div>
+        </div>
+        <div class="column middle">
+            <div class="imageWrapper" style="background: url(<?= $PageData->workUrl ?>) no-repeat top center;"></div>
+            <div class="control">
+                <div class="row">
+                    <div class="label">Текст</div>
+                    <div class="input">
+                        <input type="text" name="text" value="" />
+                    </div>
+                </div>
+                <div class="row color">
+                    <div class="label">Цвет</div>
+                    <div class="input">
+                        <input type="text" class="color" name="color" value="" />
+                    </div>
+                </div>
+                <div class="row font-size">
+                    <div class="label">Размер</div>
+                    <select name="fontSize">
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20" selected="true">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <div class="row button">
+                    <div class="input">
+                        <button name="addTextImage" class="js-add-image-text">Добавить</button>
+                    </div>
+                </div>
+                <div class="row total-button">
+                    <div class="input">
+                        <button name="save" class="js-save-button">Скачать на компьютер</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column right">
+            <div class="banner right"><!-- banner --></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="banner bottom"><!-- banner --></div>
+    </div>
+</div>
