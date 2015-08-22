@@ -29,6 +29,9 @@ class Collection {
             case CollectionCategory::GIRL:
                 return new CollectionGirl();
                 break;
+            case CollectionCategory::PLAIN:
+                return new CollectionPlain();
+                break;
             default:
                 throw new RuntimeException('category ' . $category . ' did not recognized');
         }
@@ -45,6 +48,7 @@ class Collection {
             CollectionCategory::CAR    => new CollectionCar(),
             CollectionCategory::SPACE  => new CollectionSpace(),
             CollectionCategory::GIRL   => new CollectionGirl(),
+            CollectionCategory::PLAIN  => new CollectionPlain(),
         ];
     }
 }

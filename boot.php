@@ -70,6 +70,7 @@ define('UPLOAD_DIR', ROOT_DIR . '../uploads/');
 define('LIB_DIR', ROOT_DIR . 'lib/');
 define('PEAR_DIR', LIB_DIR . 'Pear/');
 
+define('IMG_CREATE', IMAGE_DIR . 'preset/create/');
 define('IMG_1920x1080', IMAGE_DIR . 'preset/1920x1080/');
 define('IMG_230xY', IMAGE_DIR . 'preset/230xY/');
 define('IMG_500xY', IMAGE_DIR . 'preset/500xY/');
