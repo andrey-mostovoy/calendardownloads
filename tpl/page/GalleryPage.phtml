@@ -9,12 +9,12 @@ use App\Image\Image;
 ?>
 <div class="GalleryPage">
     <div class="header">
-        <img width="100%" src="/static/img/header.png" />
-        <div class="banner top"><!-- banner --></div>
+        <img src="/static/img/header.png" />
+        <div class="sbn top js-sbn-top"><!-- sbn --></div>
     </div>
     <div class="content">
         <div class="column left">
-            <div class="banner left"><!-- banner --></div>
+            <div class="sbn left js-sbn-left"><!-- sbn --></div>
         </div>
         <div class="column middle">
             <?php if (isset($PageData->availableCategories)): ?>
@@ -51,10 +51,10 @@ use App\Image\Image;
             <?php endif; ?>
         </div>
         <div class="column right">
-            <div class="banner right"><!-- banner --></div>
+            <div class="sbn right js-sbn-right"><!-- sbn --></div>
         </div>
     </div>
     <div class="footer">
-        <div class="banner bottom"><!-- banner --></div>
+        <div class="sbn bottom js-sbn-bottom"><!-- sbn --></div>
     </div>
 </div>

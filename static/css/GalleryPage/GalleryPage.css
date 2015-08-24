@@ -11,7 +11,11 @@ body {
 
 .GalleryPage {
     margin: 0 auto;
-    width: 1000px;
+    width: 1240px;
+}
+
+.GalleryPage .header {
+    text-align: center;
 }
 
 .row .item {
@@ -34,21 +38,19 @@ body {
     width: 230px;
 }
 
-.banner {
+.sbn {
     text-align: center;
 }
-.banner.top,
-.banner.bottom {
+.sbn.top,
+.sbn.bottom {
     width: 728px;
     height: 90px;
     margin: 20px auto;
-    border: 1px dashed black;
 }
-.banner.left,
-.banner.right {
-    width: 120px;
-    height: 240px;
-    border: 1px dashed black;
+.sbn.left,
+.sbn.right {
+    width: 240px;
+    height: 400px;
 }
 
 .content {
@@ -60,7 +62,7 @@ body {
 }
 
 .column.left, .column.right {
-    width: 120px;
+    width: 240px;
     vertical-align: top;
 }
 

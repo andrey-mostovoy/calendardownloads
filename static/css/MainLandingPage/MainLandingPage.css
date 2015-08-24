@@ -11,24 +11,26 @@ body {
 
 .MainLandingPage {
     margin: 0 auto;
-    width: 1000px;
+    width: 1240px;
 }
 
-.banner {
+.MainLandingPage .header {
     text-align: center;
 }
-.banner.top,
-.banner.bottom {
+
+.sbn {
+    text-align: center;
+}
+.sbn.top,
+.sbn.bottom {
     width: 728px;
     height: 90px;
     margin: 20px auto;
-    border: 1px dashed black;
 }
-.banner.left,
-.banner.right {
+.sbn.left,
+.sbn.right {
     width: 120px;
     height: 240px;
-    border: 1px dashed black;
 }
 
 .content {
@@ -40,7 +42,7 @@ body {
 }
 
 .column.left, .column.right {
-    width: 120px;
+    width: 240px;
     vertical-align: top;
 }
 
