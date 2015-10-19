@@ -6,7 +6,7 @@
 return [
     'listen' => '80',
     'serverNames' => [
-        'calendardownloads.com',
+        'customisedwallpaper.com',
     ],
     'fastcgi' => 'unix:/var/run/php5-fpm.sock',
 //    'fastcgi' => '127.0.0.1:9000',
